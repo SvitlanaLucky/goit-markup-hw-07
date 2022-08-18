@@ -37,15 +37,15 @@
     letter-spacing: 0.03em;
     color: var(--main-color);
     transition: color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .address__item:not(:last-child) {
     margin-bottom: 9px;
-}
-
-.address__map:hover,
-.address__map:focus {
-    color: var(--accent-color);
 }
 
 .address__link {
@@ -56,11 +56,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color var(--duration) var(--timing-function);
-}
 
-.address__link:hover,
-.address__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .address__link_theme_dark {
@@ -71,12 +71,12 @@
     margin-right: 93px;
 }
 
-.social__link_theme_dark {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
 .social__icon_theme_dark {
     fill: var(--main-color);
+}
+
+.social__link_theme_dark {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* --------- form footer --------- */
@@ -110,12 +110,12 @@
     background-color: var(--accent-color);
     border-color: transparent;
     transition: background-color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
-}
 
-.subscribe__btn:hover,
-.subscribe__btn:focus {
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .subscribe__text {

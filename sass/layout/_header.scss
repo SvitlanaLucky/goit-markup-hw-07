@@ -32,6 +32,11 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .menu__underline::after {
@@ -48,11 +53,6 @@
 }
 
 .menu__link_current {
-    color: var(--accent-color);
-}
-
-.menu__link:hover,
-.menu__link:focus {
     color: var(--accent-color);
 }
 
@@ -74,15 +74,15 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contacts__link_theme_light {
     color: var(--secondary-text-color);
-}
-
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
 }
 
 .contacts__icon {
