@@ -24,11 +24,11 @@
       <div class="container page-header__container">
         <nav class="page-nav">
           <a class="logo link" href="./index.html" lang="en"
-            >Web<span class="logo_dark">Studio</span></a
+            >Web<span class="logo__dark">Studio</span></a
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link menu__link_current menu__underline link" href="">Студія</a>
+              <a class="menu__link menu__link_current underline_current link" href="">Студія</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
@@ -42,7 +42,7 @@
         <ul class="contacts list">
           <li class="contacts__item">
             <a
-              class="contacts__link contacts__link_theme_light link"
+              class="contacts__link contacts__link_theme-light link"
               href="mailto:info@devstudio.com"
             >
               <svg class="contacts__icon" width="16" height="12">
@@ -52,7 +52,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link contacts__link_theme_light link" href="tel:+380961111111">
+            <a class="contacts__link contacts__link_theme-light link" href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -74,11 +74,11 @@
 
       <!-- content -->
       <section class="section">
-        <div class="content container">
+        <div class="container">
           <h2 class="visually-hidden">наші переваги</h2>
-          <ul class="content__list list">
+          <ul class="content content__list list">
             <li>
-              <div class="content__icon">
+              <div class="content__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
@@ -89,7 +89,7 @@
               </p>
             </li>
             <li>
-              <div class="content__icon">
+              <div class="content__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
@@ -100,7 +100,7 @@
               </p>
             </li>
             <li>
-              <div class="content__icon">
+              <div class="content__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
@@ -111,7 +111,7 @@
               </p>
             </li>
             <li>
-              <div class="content__icon">
+              <div class="content__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
@@ -125,10 +125,10 @@
         </div>
       </section>
 
-      <section class="img-box section">
+      <section class="section section_no-padding-top">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="img-box__list list">
+          <ul class="img-box list">
             <li class="img-box__item">
               <img src="./images/what-do/keyboard.jpg" alt="клавіатура" width="370" height="294" />
               <p class="img-box__text">Десктопні додатки</p>
@@ -146,10 +146,10 @@
       </section>
 
       <!-- team -->
-      <section class="team section">
+      <section class="section section_other-background">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team__list list">
+          <ul class="team list">
             <li class="team__item">
               <img
                 src="./images/employees/img_1.jpg"
@@ -158,7 +158,7 @@
                 height="260"
               />
               <div class="team__wrapper">
-                <h3 class="team__name">Ігор Дем'яненко</h3>
+                <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
                 <ul class="social list">
                   <li class="social__item">
@@ -195,7 +195,7 @@
             <li class="team__item">
               <img src="./images/employees/img_2.jpg" alt="Ольга Рєпіна" width="270" height="260" />
               <div class="team__wrapper">
-                <h3 class="team__name">Ольга Рєпіна</h3>
+                <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
                 <ul class="social list">
                   <li class="social__item">
@@ -237,7 +237,7 @@
                 height="260"
               />
               <div class="team__wrapper">
-                <h3 class="team__name">Микола Тарасов</h3>
+                <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
                 <ul class="social list">
                   <li class="social__item">
@@ -274,7 +274,7 @@
             <li class="team__item">
               <img src="./images/employees/img_4.jpg" alt="Михайло Єрмаков" width="270" />
               <div class="team__wrapper">
-                <h3 class="team__name">Михайло Єрмаков</h3>
+                <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
                 <ul class="social list">
                   <li class="social__item">
@@ -312,49 +312,49 @@
         </div>
       </section>
 
-      <!-- client -->
+      <!-- clients -->
       <section class="section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="client list">
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="106" height="60">
+          <ul class="clients list">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="106" height="60">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="106" height="60">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="106" height="60">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="106" height="60">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__item">
-              <a href="" class="client__link">
-                <svg class="client__icon" width="106" height="60">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite.svg#icon-group-6"></use>
                 </svg>
               </a>
@@ -369,7 +369,7 @@
       <div class="container holder">
         <div class="address__footer">
           <a class="logo link" href="./index.html" lang="en"
-            >Web<span class="logo_light">Studio</span></a
+            >Web<span class="logo__light">Studio</span></a
           >
           <address class="address">
             <ul class="address__list list">
@@ -384,13 +384,13 @@
               </li>
               <li class="address__item">
                 <a
-                  class="address__link address__link_theme_dark link"
+                  class="address__link address__link_theme-dark link"
                   href="mailto:info@example.com"
                   >info@example.com></a
                 >
               </li>
               <li class="address__item">
-                <a class="address__link address__link_theme_dark link" href="tel:+380991111111"
+                <a class="address__link address__link_theme-dark link" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -402,29 +402,29 @@
           <h2 class="footer__title">приєднуйтесь</h2>
           <ul class="social list">
             <li class="social__item">
-              <a href="" class="social__link social__link_theme_dark">
-                <svg class="social__icon social__icon_theme_dark" width="20" height="20">
+              <a href="" class="social__link social__link_theme-dark">
+                <svg class="social__icon social__icon_theme-dark" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social__link_theme_dark">
-                <svg class="social__icon social__icon_theme_dark" width="20" height="20">
+              <a href="" class="social__link social__link_theme-dark">
+                <svg class="social__icon social__icon_theme-dark" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social__link_theme_dark">
-                <svg class="social__icon social__icon_theme_dark" width="20" height="20">
+              <a href="" class="social__link social__link_theme-dark">
+                <svg class="social__icon social__icon_theme-dark" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social__link_theme_dark">
-                <svg class="social__icon social__icon_theme_dark" width="20" height="20">
+              <a href="" class="social__link social__link_theme-dark">
+                <svg class="social__icon social__icon_theme-dark" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -454,9 +454,9 @@
     <!-- modal btn -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__btn_close" data-modal-close>
-          <svg class="modal__icon" width="11" height="11">
+      <div class="modal-box">
+        <button type="button" class="modal-box__btn_close" data-modal-close>
+          <svg class="modal-box__icon" width="11" height="11">
             <use href="./images/sprite.svg#icon-Vector"></use>
           </svg>
         </button>

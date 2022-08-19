@@ -39,7 +39,7 @@
     }
 }
 
-.menu__underline::after {
+.underline_current::after {
     position: absolute;
     display: block;
     content: '';
@@ -81,7 +81,7 @@
     }
 }
 
-.contacts__link_theme_light {
+.contacts__link_theme-light {
     color: var(--secondary-text-color);
 }
 

@@ -1,8 +1,8 @@
-.team {
+.section_other-background {
     background-color: #F5F4FA;
 }
 
-.team__list {
+.team {
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,7 +20,7 @@
     }
 }
 
-.team__name {
+.team__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;

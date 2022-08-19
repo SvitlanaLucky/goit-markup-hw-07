@@ -27,7 +27,7 @@
     color: var(--secondary-text-color);
 }
 
-.content__icon {
+.content__icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,11 +38,11 @@
     border-radius: 4px;
 }
 
-.img-box {
+.section_no-padding-top {
     padding-top: 0px;
 }
 
-.img-box__list {
+.img-box {
     display: flex;
     justify-content: space-between;
 }

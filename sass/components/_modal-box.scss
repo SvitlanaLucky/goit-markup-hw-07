@@ -1,4 +1,4 @@
-.modal {
+.modal-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -9,7 +9,7 @@
     padding: 40px;
 }
 
-.modal__btn_close {
+.modal-box__btn_close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -24,11 +24,11 @@
     padding: 0;
 }
 
-.modal__icon {
+.modal-box__icon {
     transition: fill var(--duration) var(--timing-function);
 
-    .modal__btn_close:hover &,
-    .modal__btn_close:focus & {
+    .modal-box__btn_close:hover &,
+    .modal-box__btn_close:focus & {
         fill: var(--accent-color);
     }
 }

@@ -106,17 +106,17 @@
         margin-right: 7px;
     }
 
-    .modal-form__check:checked + & {
+    .modal-form__check:checked + &::before {
         background-color: var(--accent-color);
         background-image: url("../images/vector/vector-fake.svg");
         background-repeat: no-repeat;
         background-position: center;
         border-color: transparent;
     }
-}
 
-.modal-form__check:focus + .modal-form .modal-form_success {
-    outline: 1px solid var(--accent-color);
+    .modal-form__check:focus + &::before {
+        outline: 1px solid var(--accent-color);
+    }
 }
 
 .modal-form__link {
